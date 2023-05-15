@@ -1,0 +1,23 @@
+{
+  "name": "order-summary-component",
+  "version": "1.0.0",
+  "description": "This is a solution of one the Frontend Mentor challenges - https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj, built with TailwindCSS",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [
+    "TailwindCSS",
+    "Parcel",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Radek Tomasek (radek.tomasek@gmail.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.1"
+  }
+}
