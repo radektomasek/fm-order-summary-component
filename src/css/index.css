@@ -8,11 +8,24 @@
     --breakpoint-sm: 375px;
     --breakpoint-lg: 1440px;
 
+    --button-height: 3.125rem;
+    --button-width-sm: 17.4375rem;
+    --button-width-lg: 22.125rem;
+
+    --card-width-sm: 20.4375rem;
+    --card-height-sm: 35.4375rem;
+
+    --card-width-lg: 28.125rem;
+    --card-height-lg: 43.5625rem;
+
+    --card-content-height-sm: 25.4575rem;
+
     --primary-pale-blue-color: hsl(225, 100%, 94%);
     --primary-bright-blue-color: hsl(245, 75%, 52%);
     --neutral-very-palce-blue-color: hsl(225, 100%, 98%);
     --neutral-desaturated-blue-color: hsl(224, 23%, 55%);
     --neutral-dark-blue-color: hsl(223, 47%, 23%);
+    --light-gray-color: hsl(228, 100%, 99%);
 
     --link-size-small: 0.8125rem; /* 13px */
     --link-line-small: 1.0625rem; /* 17px */
@@ -43,7 +56,7 @@
     }
 
     body {
-        @apply font-redHatDisplay bg-mobile bg-no-repeat bg-cover bg-paleBluePrimary md:bg-desktop;
+        @apply flex justify-center items-center h-screen font-redHatDisplay bg-mobile bg-no-repeat bg-contain bg-paleBluePrimary md:bg-desktop;
     }
 
     h1 {
@@ -63,8 +76,28 @@
     }
 
     button {
-        @apply font-black text-sm/5;
+        @apply inline-block font-black text-sm/5;
     }
+}
+
+.btn-primary {
+    @apply w-70 md:w-86 h-12 bg-brightBluePrimary text-white rounded-xl;
+}
+
+.btn-secondary {
+    @apply text-desaturatedBlue h-12;
+}
+
+.card {
+    @apply relative flex flex-col justify-end w-81 h-110 md:w-100 md:h-130  before:content-['*'] before:bg-hero before:bg-no-repeat before:bg-contain before:w-full before:h-full;
+}
+
+.card__content {
+    @apply flex flex-col h-98 bg-white justify-center items-center absolute;
+}
+
+.plan {
+    @apply flex bg-lightGray p-4;
 }
 
 .plan__price {
@@ -73,4 +106,8 @@
 
 .plan__change {
     @apply font-bold;
+}
+
+.cta {
+    @apply flex flex-col items-center w-70;
 }
