@@ -17,7 +17,10 @@ module.exports = {
       },
       height: {
         '12': 'var(--button-height)',
+        '21': 'var(--plan-height-sm)',
+        '25': 'var(--plan-height-lg)',
         '98': 'var(--card-content-height-sm)',
+        '104': 'var(--card-content-height-lg)',
         '110': 'var(--card-height-sm)',
         '130': 'var(--card-height-lg)'
       },
