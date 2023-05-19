@@ -30,6 +30,7 @@ module.exports = {
         veryPaleBlue: 'var(--neutral-very-palce-blue-color)',
         desaturatedBlue: 'var(--neutral-desaturated-blue-color)',
         darkBlue: 'var(--neutral-dark-blue-color)',
+        brightHoverBlue: 'var(--bright-blue-hover-color)',
         lightGray: 'var(--light-gray-color)'
       },
       fontSize: {
@@ -69,6 +70,10 @@ module.exports = {
         'desktop': "url('../../assets/pattern-background-desktop.svg')",
         'hero': "url('../../assets/illustration-hero.svg')"
       },
+      boxShadow: {
+        '3xl': '0 4px 4px 0 rgba(0, 0, 0, 0.25)',
+        '4xl': '0 20px 8px 0px rgba(0, 0, 0, 0.1)',
+      }
     },
   },
   plugins: [],

@@ -27,6 +27,7 @@
     --neutral-very-palce-blue-color: hsl(225, 100%, 98%);
     --neutral-desaturated-blue-color: hsl(224, 23%, 55%);
     --neutral-dark-blue-color: hsl(223, 47%, 23%);
+    --bright-blue-hover-color: hsl(245, 83%, 68%);
     --light-gray-color: hsl(228, 100%, 99%);
 
     --link-size-small: 0.8125rem; /* 13px */
@@ -56,7 +57,7 @@
     }
 
     body {
-        @apply flex justify-center items-center h-screen font-redHatDisplay bg-mobile bg-no-repeat bg-contain bg-paleBluePrimary md:bg-desktop;
+        @apply flex flex-col justify-center items-center h-screen font-redHatDisplay bg-mobile bg-no-repeat bg-contain bg-paleBluePrimary md:bg-desktop min-w-min;
     }
 
     h1 {
@@ -72,7 +73,7 @@
     }
 
     a {
-        @apply text-2xs md:text-xs underline text-brightBluePrimary hover:no-underline;
+        @apply text-2xs md:text-xs underline text-brightBluePrimary hover:no-underline hover:text-brightHoverBlue;
     }
 
     button {
@@ -81,19 +82,19 @@
 }
 
 .btn-primary {
-    @apply w-70 md:w-86 h-12 bg-brightBluePrimary text-white rounded-xl;
+    @apply w-70 md:w-86 h-12 bg-brightBluePrimary text-white rounded-xl shadow-4xl hover:bg-brightHoverBlue;
 }
 
 .btn-secondary {
-    @apply text-desaturatedBlue h-12;
+    @apply text-desaturatedBlue h-12 hover:text-darkBlue;
 }
 
 .card {
-    @apply relative flex flex-col justify-end w-81 h-110 md:w-100 md:h-130 before:rounded-2xl before:content-[''] before:bg-hero before:bg-no-repeat before:bg-contain before:w-full before:h-full;
+    @apply relative flex flex-col justify-end w-81 h-110 before:rounded-2xl before:content-[''] before:bg-hero before:bg-no-repeat before:bg-contain before:w-full before:h-full md:w-100 md:h-130;
 }
 
 .card__content {
-    @apply flex h-98 absolute justify-evenly text-center flex-col bg-white justify-center items-center rounded-b-2xl md:h-104 md:py-8;
+    @apply flex h-98 absolute justify-evenly text-center flex-col bg-white justify-center items-center rounded-b-3xl shadow-3xl md:h-104 md:py-8;
 }
 
 .card__paragraph {
@@ -134,4 +135,12 @@
 
 .cta__cancel {
     @apply md:mt-2;
+}
+
+.attribution {
+    @apply text-darkBlue text-center text-2xs p-2 w-screen fixed top-0 left-0 right-0;
+}
+
+.attribution a {
+    @apply text-darkBlue text-2xs hover:underline;
 }
